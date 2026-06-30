@@ -32,8 +32,8 @@ const caseStudies = [
     id: 2,
     category: "문화예술",
     title: "국제 현대미술 페스티벌 다큐",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    thumbnail: "https://img.youtube.com/vi/KM5MNgdTLXY/maxresdefault.jpg",
+    youtubeId: "KM5MNgdTLXY",
     year: "2024",
     tags: ["다큐멘터리", "아카이브", "국제 배급"],
     problem:
