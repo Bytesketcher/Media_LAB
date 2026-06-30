@@ -53,8 +53,8 @@ const caseStudies = [
     id: 3,
     category: "기업",
     title: "스타트업 IR 브랜드 필름",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    thumbnail: "https://img.youtube.com/vi/4ICQd93CydA/maxresdefault.jpg",
+    youtubeId: "4ICQd93CydA",
     year: "2025",
     tags: ["AI 영상", "브랜드필름", "IR 피칭"],
     problem:
