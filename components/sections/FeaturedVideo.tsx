@@ -6,7 +6,7 @@ import { Play } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
-const BRAND_STORY_YOUTUBE_ID = "VL4lfdsHBms";
+const BRAND_STORY_YOUTUBE_ID = "fHxJhww7g4o";
 
 export default function FeaturedVideo() {
   const [playing, setPlaying] = useState(false);
