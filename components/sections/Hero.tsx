@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Play, ArrowDown } from "lucide-react";
 
-const HERO_YOUTUBE_ID = "dQw4w9WgXcQ"; // 실제 영상 ID로 교체하세요
+const HERO_YOUTUBE_ID = "V0vfWyWXP7Y";
 
 export default function Hero() {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -40,7 +40,7 @@ export default function Hero() {
         {videoLoaded && (
           <iframe
             className="absolute inset-0 w-full h-full pointer-events-none scale-[1.2]"
-            src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_YOUTUBE_ID}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1`}
+            src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_YOUTUBE_ID}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&start=16`}
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
             title="Media LAB 히어로 영상"
