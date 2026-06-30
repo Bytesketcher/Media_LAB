@@ -6,7 +6,7 @@ import { Play } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
-const BRAND_STORY_YOUTUBE_ID = "dQw4w9WgXcQ"; // 실제 브랜드 스토리 영상 ID로 교체하세요
+const BRAND_STORY_YOUTUBE_ID = "VL4lfdsHBms";
 
 export default function FeaturedVideo() {
   const [playing, setPlaying] = useState(false);
