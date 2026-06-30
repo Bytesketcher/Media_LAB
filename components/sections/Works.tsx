@@ -11,8 +11,8 @@ const caseStudies = [
     id: 1,
     category: "공공기관",
     title: "○○시 관광 홍보 캠페인",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    youtubeId: "dQw4w9WgXcQ",
+    thumbnail: "https://img.youtube.com/vi/SECnIF_NaFk/maxresdefault.jpg",
+    youtubeId: "SECnIF_NaFk",
     year: "2024",
     tags: ["홍보영상", "유튜브", "SNS 컷"],
     problem:
