@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Play, ArrowDown } from "lucide-react";
 
-const HERO_YOUTUBE_ID = "UWFmF5obXQY";
+const HERO_YOUTUBE_ID = "VL4lfdsHBms";
 
 export default function Hero() {
   const [videoLoaded, setVideoLoaded] = useState(false);
