@@ -93,7 +93,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => handleNavClick("#contact")}
-              className="text-sm px-9 py-4.5 rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
+              className="text-sm px-12 py-5 rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
             >
               문의하기
             </button>
