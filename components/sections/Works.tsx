@@ -8,24 +8,24 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 const caseStudies = [
   {
-    id: 1,
-    category: "공공기관",
-    title: "시군구 관광 홍보 캠페인",
-    thumbnail: "https://img.youtube.com/vi/SECnIF_NaFk/maxresdefault.jpg",
-    youtubeId: "SECnIF_NaFk",
-    year: "2024",
-    tags: ["홍보영상", "유튜브", "SNS 컷"],
+    id: 3,
+    category: "기업",
+    title: "스타트업 IR 브랜드 필름",
+    thumbnail: "https://img.youtube.com/vi/4ICQd93CydA/maxresdefault.jpg",
+    youtubeId: "4ICQd93CydA",
+    year: "2025",
+    tags: ["AI 영상", "브랜드필름", "IR 피칭"],
     problem:
-      "지역 관광 인지도가 낮고, 기존 홍보물이 딱딱하고 매력적이지 않아 젊은 세대에게 어필하지 못하는 문제가 있었습니다.",
+      "시리즈 A 투자 유치를 앞두고 기술력은 뛰어나지만 브랜드 스토리를 시각적으로 전달하는 영상 자산이 없었습니다.",
     strategy:
-      "숏폼(Reels·Shorts) 우선 전략을 채택하고, 지역 인플루언서와의 콜라보레이션으로 자연스러운 확산을 설계했습니다.",
+      "생성형 AI 시각화를 적극 활용해 복잡한 기술을 직관적으로 표현하고, 투자자 관점에서의 내러티브를 설계했습니다.",
     production:
-      "4K 드론 촬영, 타임랩스, 감성 내레이션을 결합한 메인 영상과 15초 숏폼 6종을 동시 제작했습니다.",
-    result: "유튜브 조회수 42만, 관광객 전년 대비 +31% 증가",
+      "AI 영상 생성 + 실사 촬영 하이브리드 방식으로 3분 IR 필름을 제작. 6개 언어 자막 동시 처리.",
+    result: "투자 피칭 성공률 향상, 총 85억 시리즈 A 유치",
     metrics: [
-      { value: "42만", label: "유튜브 조회수" },
-      { value: "+31%", label: "관광객 증가" },
-      { value: "4.9/5", label: "클라이언트 평점" },
+      { value: "85억", label: "시리즈 A 유치" },
+      { value: "6개", label: "언어 버전" },
+      { value: "3분", label: "핵심 필름 러닝타임" },
     ],
   },
   {
@@ -50,24 +50,24 @@ const caseStudies = [
     ],
   },
   {
-    id: 3,
-    category: "기업",
-    title: "스타트업 IR 브랜드 필름",
-    thumbnail: "https://img.youtube.com/vi/4ICQd93CydA/maxresdefault.jpg",
-    youtubeId: "4ICQd93CydA",
-    year: "2025",
-    tags: ["AI 영상", "브랜드필름", "IR 피칭"],
+    id: 1,
+    category: "공공기관",
+    title: "시군구 관광 홍보 캠페인",
+    thumbnail: "https://img.youtube.com/vi/SECnIF_NaFk/maxresdefault.jpg",
+    youtubeId: "SECnIF_NaFk",
+    year: "2024",
+    tags: ["홍보영상", "유튜브", "SNS 컷"],
     problem:
-      "시리즈 A 투자 유치를 앞두고 기술력은 뛰어나지만 브랜드 스토리를 시각적으로 전달하는 영상 자산이 없었습니다.",
+      "지역 관광 인지도가 낮고, 기존 홍보물이 딱딱하고 매력적이지 않아 젊은 세대에게 어필하지 못하는 문제가 있었습니다.",
     strategy:
-      "생성형 AI 시각화를 적극 활용해 복잡한 기술을 직관적으로 표현하고, 투자자 관점에서의 내러티브를 설계했습니다.",
+      "숏폼(Reels·Shorts) 우선 전략을 채택하고, 지역 인플루언서와의 콜라보레이션으로 자연스러운 확산을 설계했습니다.",
     production:
-      "AI 영상 생성 + 실사 촬영 하이브리드 방식으로 3분 IR 필름을 제작. 6개 언어 자막 동시 처리.",
-    result: "투자 피칭 성공률 향상, 총 85억 시리즈 A 유치",
+      "4K 드론 촬영, 타임랩스, 감성 내레이션을 결합한 메인 영상과 15초 숏폼 6종을 동시 제작했습니다.",
+    result: "유튜브 조회수 42만, 관광객 전년 대비 +31% 증가",
     metrics: [
-      { value: "85억", label: "시리즈 A 유치" },
-      { value: "6개", label: "언어 버전" },
-      { value: "3분", label: "핵심 필름 러닝타임" },
+      { value: "42만", label: "유튜브 조회수" },
+      { value: "+31%", label: "관광객 증가" },
+      { value: "4.9/5", label: "클라이언트 평점" },
     ],
   },
 ];
