@@ -10,7 +10,7 @@ const caseStudies = [
   {
     id: 1,
     category: "공공기관",
-    title: "○○시 관광 홍보 캠페인",
+    title: "○○시군구 관광 홍보 캠페인",
     thumbnail: "https://img.youtube.com/vi/SECnIF_NaFk/maxresdefault.jpg",
     youtubeId: "SECnIF_NaFk",
     year: "2024",
