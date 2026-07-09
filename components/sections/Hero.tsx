@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -101,7 +101,7 @@ export default function Hero() {
               e.preventDefault();
               document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-16 py-7 rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold text-sm hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
+            className="px-[5px] py-[5px] rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold text-sm hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
           >
             프로젝트 문의
           </a>
