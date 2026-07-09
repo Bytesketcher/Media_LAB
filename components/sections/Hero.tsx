@@ -101,13 +101,13 @@ export default function Hero() {
               e.preventDefault();
               document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-8 py-4 rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold text-base hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
+            className="px-10 py-5 rounded-xl bg-[var(--accent)] text-[#07100f] font-semibold text-sm hover:bg-[#00b394] transition-colors duration-200 cursor-pointer"
           >
             프로젝트 문의
           </a>
           <button
             onClick={() => setShowPlayer(true)}
-            className="flex items-center gap-3 px-8 py-4 rounded-xl border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-200 cursor-pointer"
+            className="flex items-center gap-3 px-10 py-5 rounded-xl border border-[var(--border)] text-[var(--text-primary)] text-lg hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-200 cursor-pointer"
             aria-label="쇼릴 영상 재생"
           >
             <span className="w-8 h-8 rounded-full border border-current flex items-center justify-center">

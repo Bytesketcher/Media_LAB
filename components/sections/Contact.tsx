@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, CheckCircle, MapPin, Mail, Phone } from "lucide-react";
+import { Send, CheckCircle, Mail } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
@@ -16,9 +16,7 @@ const projectTypes = [
 ];
 
 const contactInfo = [
-  { icon: Mail, label: "이메일", value: "hello@medorastudio.kr", href: "mailto:hello@medorastudio.kr" },
-  { icon: Phone, label: "전화", value: "02-000-0000", href: "tel:+82200000000" },
-  { icon: MapPin, label: "위치", value: "서울특별시", href: "#" },
+  { icon: Mail, label: "이메일", value: "snowypaper70@gmail.com", href: "mailto:snowypaper70@gmail.com" },
 ];
 
 interface FormState {

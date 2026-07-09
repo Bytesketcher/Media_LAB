@@ -42,7 +42,7 @@ export default function Footer() {
                 <Youtube size={16} />
               </a>
               <a
-                href="mailto:hello@medorastudio.kr"
+                href="mailto:snowypaper70@gmail.com"
                 aria-label="이메일 문의"
                 className="w-9 h-9 rounded-lg border border-[var(--border-subtle)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--border)] transition-colors duration-200"
               >
