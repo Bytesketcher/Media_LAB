@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,10 +42,10 @@ const caseStudies = [
       "멀티캠 동시 촬영 시스템과 현장 편집 워크플로우를 구축해 페스티벌 종료 72시간 내 초판 완성을 목표로 했습니다.",
     production:
       "전문 다큐멘터리 PD, 촬영감독의 팀을 구성하고 현장에서 색보정과 편집을 병행 진행했습니다.",
-    result: "국내외 7개 채널 배급, 영화제 단편 다큐부문 입선",
+    result: "페스티벌의 현장감을 생생하게 담아낸 다큐멘터리로 국내외 배급망을 통해 필름 페스티벌을 효과적으로 알렸고, 영화제 단편 다큐부문에도 선정되며 작품성을 인정받았습니다.",
     metrics: [
-      { value: "7개", label: "국내외 배급 채널" },
-      { value: "72h", label: "초판 완성 시간" },
+      { value: "확산", label: "국내외 배급 홍보 효과" },
+      { value: "신속 대응", label: "현장 편집 워크플로우" },
       { value: "입선", label: "영화제 수상" },
     ],
   },
