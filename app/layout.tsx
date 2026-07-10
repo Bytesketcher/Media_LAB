@@ -4,20 +4,20 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "HO Ground — Media & Cultural Design",
+  title: "Production HOSU — Media & Cultural Design",
   description:
     "공공기관·지역·문화예술·기업을 위한 홍보영상, 유튜브, 생성형 AI 콘텐츠 전문 미디어 스튜디오",
   keywords: ["홍보영상", "미디어스튜디오", "AI콘텐츠", "유튜브제작", "영상제작", "기업영상"],
   openGraph: {
-    title: "HO Ground — Media & Cultural Design",
+    title: "Production HOSU — Media & Cultural Design",
     description: "공공기관·지역·문화예술·기업을 위한 홍보영상과 생성형 AI 콘텐츠 제작",
     type: "website",
     locale: "ko_KR",
-    siteName: "HO Ground",
+    siteName: "HOSU",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HO Ground",
+    title: "HOSU",
     description: "Media & Cultural Design",
   },
   robots: { index: true, follow: true },

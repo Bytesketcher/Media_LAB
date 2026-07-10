@@ -20,7 +20,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
                 <span className="text-[#07100f] font-bold text-sm">H</span>
               </div>
-              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Ground</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HOSU</span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-xs">
               공공기관·지역·문화예술·기업을 위한 Media & Cultural Design 스튜디오.
@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--border-subtle)] gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © 2025 HO Ground. All rights reserved.
+            © 2025 HOSU. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Crafted with precision in Korea
