@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -62,11 +62,11 @@ const caseStudies = [
     strategy:
       "숏폼(Reels·Shorts) 우선 전략을 채택하고, 지역 인플루언서와의 콜라보레이션으로 자연스러운 확산을 설계했습니다.",
     production:
-      "4K 드론 촬영, 타임랩스, 감성 내레이션을 결합한 메인 영상과 15초 숏폼 6종을 동시 제작했습니다.",
-    result: "유튜브 조회수 42만, 관광객 전년 대비 +31% 증가",
+      "4K 촬영, 타임랩스, 감성 내레이션을 결합한 메인 영상과 숏폼을 동시 제작했습니다.",
+    result: "유튜브 조회수와 관광객 수가 눈에 띄게 증가하며 지역 관광 홍보에 기여했습니다.",
     metrics: [
-      { value: "42만", label: "유튜브 조회수" },
-      { value: "+31%", label: "관광객 증가" },
+      { value: "상승", label: "유튜브 조회수" },
+      { value: "증가", label: "관광객 수" },
       { value: "4.9/5", label: "클라이언트 평점" },
     ],
   },
