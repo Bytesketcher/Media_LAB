@@ -88,7 +88,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--border-subtle)] gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © 2025 HOSU. All rights reserved.
+            © 2026 HOSU. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Crafted with precision in Korea
