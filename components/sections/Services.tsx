@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import {
@@ -87,7 +87,7 @@ export default function Services() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              기획, 촬영, 편집, AI 후반 작업까지 — 영상의 모든 단계를 HOSU가 함께합니다.
+              기획, 촬영, 편집, AI 후반 작업까지 — 영상의 모든 단계를 Ground HO가 함께합니다.
             </p>
           </AnimateInView>
         </div>

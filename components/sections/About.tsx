@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import AnimateInView from "@/components/ui/AnimateInView";
@@ -30,7 +30,7 @@ export default function About() {
         {/* Left — Text */}
         <div className="flex flex-col gap-8">
           <AnimateInView>
-            <SectionLabel>About HOSU</SectionLabel>
+            <SectionLabel>About Ground HO</SectionLabel>
           </AnimateInView>
 
           <AnimateInView delay={0.1}>
@@ -46,7 +46,7 @@ export default function About() {
 
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] leading-relaxed text-lg">
-              HOSU는 공공기관, 지역 브랜드, 문화예술 기관, 기업을 위해
+              Ground HO는 공공기관, 지역 브랜드, 문화예술 기관, 기업을 위해
               정밀하게 설계된 영상 콘텐츠를 제작합니다. 단순한 촬영이 아니라
               <strong className="text-[var(--text-primary)] font-medium"> 전략적 스토리텔링</strong>을
               통해 브랜드의 가치를 명확하게 전달합니다.
@@ -56,7 +56,7 @@ export default function About() {
           <AnimateInView delay={0.3}>
             <p className="text-[var(--text-secondary)] leading-relaxed">
               생성형 AI와 영상 제작의 경계를 허물며, 새로운 미디어 경험을 설계합니다.
-              HOSU의 모든 프로젝트는 클라이언트와 깊은 협업으로 시작해 측정 가능한
+              Ground HO의 모든 프로젝트는 클라이언트와 깊은 협업으로 시작해 측정 가능한
               성과로 마무리됩니다.
             </p>
           </AnimateInView>

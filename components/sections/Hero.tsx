@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -43,7 +43,7 @@ export default function Hero() {
             src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_YOUTUBE_ID}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1`}
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
-            title="HOSU 히어로 영상"
+            title="Ground HO 히어로 영상"
             style={{ objectFit: "cover" }}
           />
         )}
@@ -176,7 +176,7 @@ export default function Hero() {
               src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&rel=0`}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="HOSU 쇼릴"
+              title="Ground HO 쇼릴"
             />
             <button
               onClick={() => setShowPlayer(false)}

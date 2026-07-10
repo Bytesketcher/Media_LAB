@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "이용약관 — Production HOSU",
+  title: "이용약관 — Ground HO",
 };
 
 export default function TermsOfServicePage() {
@@ -18,7 +18,7 @@ export default function TermsOfServicePage() {
             제1조 (목적)
           </h2>
           <p>
-            본 약관은 Production HOSU(이하 &ldquo;회사&rdquo;)가 제공하는 웹사이트 및 관련 서비스
+            본 약관은 Ground HO(이하 &ldquo;회사&rdquo;)가 제공하는 웹사이트 및 관련 서비스
             (이하 &ldquo;서비스&rdquo;)의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항,
             기타 필요한 사항을 규정함을 목적으로 합니다.
           </p>
