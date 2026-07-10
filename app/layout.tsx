@@ -4,21 +4,21 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Media LAB — 미디어 프로덕션",
+  title: "HO Ground — Media & Cultural Design",
   description:
     "공공기관·지역·문화예술·기업을 위한 홍보영상, 유튜브, 생성형 AI 콘텐츠 전문 미디어 스튜디오",
   keywords: ["홍보영상", "미디어스튜디오", "AI콘텐츠", "유튜브제작", "영상제작", "기업영상"],
   openGraph: {
-    title: "Media LAB — 미디어 프로덕션",
+    title: "HO Ground — Media & Cultural Design",
     description: "공공기관·지역·문화예술·기업을 위한 홍보영상과 생성형 AI 콘텐츠 제작",
     type: "website",
     locale: "ko_KR",
-    siteName: "Media LAB",
+    siteName: "HO Ground",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Media LAB",
-    description: "미디어 프로덕션 스튜디오",
+    title: "HO Ground",
+    description: "Media & Cultural Design",
   },
   robots: { index: true, follow: true },
 };

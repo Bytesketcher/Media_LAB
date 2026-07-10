@@ -18,12 +18,12 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
-                <span className="text-[#07100f] font-bold text-sm">M</span>
+                <span className="text-[#07100f] font-bold text-sm">H</span>
               </div>
-              <span className="text-[var(--text-primary)] font-semibold text-lg">Media LAB</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Ground</span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-xs">
-              공공기관·지역·문화예술·기업을 위한 미디어 프로덕션 스튜디오.
+              공공기관·지역·문화예술·기업을 위한 Media & Cultural Design 스튜디오.
               영상으로 브랜드의 이야기를 전합니다.
             </p>
             <div className="flex items-center gap-4 mt-6">
@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--border-subtle)] gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © 2025 Media LAB. All rights reserved.
+            © 2025 HO Ground. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Crafted with precision in Korea

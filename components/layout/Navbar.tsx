@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -63,14 +63,14 @@ export default function Navbar() {
           <a
             href="#"
             className="flex items-center gap-3 group"
-            aria-label="Media LAB 홈"
+            aria-label="HO Ground 홈"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           >
             <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
-              <span className="text-[#07100f] font-bold text-sm">M</span>
+              <span className="text-[#07100f] font-bold text-sm">H</span>
             </div>
             <span className="text-[var(--text-primary)] font-semibold text-lg tracking-tight">
-              Media LAB
+              HO Ground
             </span>
           </a>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
             aria-label="모바일 메뉴"
           >
             <div className="flex justify-between items-center px-6 h-[72px]">
-              <span className="text-[var(--text-primary)] font-semibold text-lg">Media LAB</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Ground</span>
               <button
                 onClick={() => setMenuOpen(false)}
                 className="text-[var(--text-primary)] cursor-pointer p-2"

@@ -29,7 +29,7 @@ export default function FeaturedVideo() {
               id="featured-video-heading"
               className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)]"
             >
-              Media LAB의 이야기
+              HO Ground의 이야기
             </h2>
           </AnimateInView>
           <AnimateInView delay={0.2}>
@@ -59,7 +59,7 @@ export default function FeaturedVideo() {
                 {/* YouTube thumbnail */}
                 <img
                   src={`https://img.youtube.com/vi/${BRAND_STORY_YOUTUBE_ID}/maxresdefault.jpg`}
-                  alt="Media LAB 브랜드 스토리 영상 썸네일"
+                  alt="HO Ground 브랜드 스토리 영상 썸네일"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -82,10 +82,10 @@ export default function FeaturedVideo() {
 
                   <div className="text-center">
                     <p className="text-[var(--text-primary)] font-semibold text-xl mb-1">
-                      Media LAB Story
+                      HO Ground Story
                     </p>
                     <p className="text-[var(--text-secondary)] text-sm">
-                      3분으로 보는 Media LAB의 철학과 여정
+                      3분으로 보는 HO Ground의 철학과 여정
                     </p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function FeaturedVideo() {
                   src={`https://www.youtube.com/embed/${BRAND_STORY_YOUTUBE_ID}?autoplay=1&rel=0&modestbranding=1`}
                   allow="autoplay; encrypted-media"
                   allowFullScreen
-                  title="Media LAB 브랜드 스토리"
+                  title="HO Ground 브랜드 스토리"
                 />
               </div>
             )}
@@ -114,7 +114,7 @@ export default function FeaturedVideo() {
               <span className="gradient-text">브랜드와 사람 사이의 연결입니다."</span>
             </p>
             <footer className="mt-4 text-sm text-[var(--text-muted)]">
-              — Media LAB
+              — HO Ground
             </footer>
           </blockquote>
         </AnimateInView>
