@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -6,7 +6,45 @@ import { ArrowUpRight, TrendingUp, ChevronRight } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
-const caseStudies = [
+interface CaseStudy {
+  id: number;
+  category: string;
+  title: string;
+  thumbnail: string;
+  youtubeId?: string;
+  externalLink?: string;
+  externalLinkLabel?: string;
+  year: string;
+  tags: string[];
+  problem: string;
+  strategy: string;
+  production: string;
+  result: string;
+  metrics: { value: string; label: string }[];
+}
+
+const caseStudies: CaseStudy[] = [
+  {
+    id: 4,
+    category: "지역 콘텐츠",
+    title: "힘찬이의 송도탐험",
+    thumbnail: "",
+    year: "2026",
+    tags: ["지역 퀴즈 게임", "모바일 앱", "TWA"],
+    problem:
+      "송도 지역의 역사와 문화를 관광객과 지역 주민에게 재미있게 전달할 콘텐츠가 부족했습니다.",
+    strategy:
+      "친근한 캐릭터 IP '힘찬이'를 중심으로 지역 퀴즈 게임 포맷을 기획해, 놀이를 통해 자연스럽게 송도 지역 정보를 습득할 수 있도록 설계했습니다.",
+    production:
+      "TWA(Trusted Web Activity) 방식으로 웹 콘텐츠를 안드로이드 앱으로 패키징하고, 송도 지역 퀴즈 콘텐츠를 자체 개발해 구글 플레이스토어 등록을 준비하고 있습니다.",
+    result:
+      "현재 구글 플레이스토어 등록 심사를 준비 중이며, 출시 후 성과는 추후 업데이트될 예정입니다.",
+    metrics: [
+      { value: "TWA", label: "앱 패키징 방식" },
+      { value: "개발 중", label: "지역 퀴즈 콘텐츠" },
+      { value: "등록 준비", label: "구글 플레이스토어" },
+    ],
+  },
   {
     id: 3,
     category: "기업",
@@ -187,24 +225,42 @@ export default function Works() {
                 className="glass-card rounded-2xl overflow-hidden"
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-video">
-                  <img
-                    src={study.thumbnail}
-                    alt={`${study.title} 썸네일`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                <div className="relative aspect-video bg-[var(--surface)]">
+                  {study.thumbnail ? (
+                    <img
+                      src={study.thumbnail}
+                      alt={`${study.title} 썸네일`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-[var(--text-muted)] text-sm">
+                      썸네일 준비 중
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
-                  <a
-                    href={`https://youtube.com/watch?v=${study.youtubeId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute bottom-4 right-4 flex items-center gap-1.5 text-xs text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors bg-[rgba(7,16,15,0.7)] px-3 py-1.5 rounded-full border border-[var(--border-subtle)]"
-                    aria-label="유튜브에서 영상 보기"
-                  >
-                    <ArrowUpRight size={12} aria-hidden="true" />
-                    유튜브 보기
-                  </a>
+                  {study.youtubeId ? (
+                    <a
+                      href={`https://youtube.com/watch?v=${study.youtubeId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute bottom-4 right-4 flex items-center gap-1.5 text-xs text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors bg-[rgba(7,16,15,0.7)] px-3 py-1.5 rounded-full border border-[var(--border-subtle)]"
+                      aria-label="유튜브에서 영상 보기"
+                    >
+                      <ArrowUpRight size={12} aria-hidden="true" />
+                      유튜브 보기
+                    </a>
+                  ) : study.externalLink ? (
+                    <a
+                      href={study.externalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute bottom-4 right-4 flex items-center gap-1.5 text-xs text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors bg-[rgba(7,16,15,0.7)] px-3 py-1.5 rounded-full border border-[var(--border-subtle)]"
+                    >
+                      <ArrowUpRight size={12} aria-hidden="true" />
+                      {study.externalLinkLabel ?? "자세히 보기"}
+                    </a>
+                  ) : null}
                 </div>
 
                 {/* Content */}
