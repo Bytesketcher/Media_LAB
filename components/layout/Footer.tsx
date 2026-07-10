@@ -20,7 +20,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
                 <span className="text-[#07100f] font-bold text-sm">H</span>
               </div>
-              <span className="text-[var(--text-primary)] font-semibold text-lg">HOSU</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">Production HOSU</span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-xs">
               공공기관·지역·문화예술·기업을 위한 Media & Cultural Design 스튜디오.
