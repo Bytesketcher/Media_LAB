@@ -1,9 +1,22 @@
-﻿import { Instagram, Youtube, Mail } from "lucide-react";
+import { Instagram, Youtube, Mail } from "lucide-react";
 
-const footerLinks = {
-  Services: ["홍보영상 제작", "유튜브 콘텐츠", "AI 콘텐츠", "기업 브랜드 필름"],
-  Company: ["About", "Works", "Process", "Insights"],
-  Legal: ["개인정보처리방침", "이용약관"],
+const footerLinks: Record<string, { label: string; href: string }[]> = {
+  Services: [
+    { label: "홍보영상 제작", href: "#" },
+    { label: "유튜브 콘텐츠", href: "#" },
+    { label: "AI 콘텐츠", href: "#" },
+    { label: "기업 브랜드 필름", href: "#" },
+  ],
+  Company: [
+    { label: "About", href: "#" },
+    { label: "Works", href: "#" },
+    { label: "Process", href: "#" },
+    { label: "Insights", href: "#" },
+  ],
+  Legal: [
+    { label: "개인정보처리방침", href: "/privacy" },
+    { label: "이용약관", href: "/terms" },
+  ],
 };
 
 export default function Footer() {
@@ -59,12 +72,12 @@ export default function Footer() {
               </h3>
               <ul className="flex flex-col gap-3" role="list">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-200"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
