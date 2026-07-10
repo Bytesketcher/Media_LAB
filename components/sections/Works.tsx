@@ -27,7 +27,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: 4,
     category: "지역 콘텐츠",
-    title: "힘찬이의 송도탐험",
+    title: "지역 스토리텔링 게임 개발",
     thumbnail: "/images/himchan.png",
     externalLink: "https://bytesketcher.github.io/SONGDO4/",
     externalLinkLabel: "웹으로 체험하기",
