@@ -8,6 +8,7 @@ export default function BGMPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
 
+  // Sync playback with state
   useEffect(() => {
     if (!audioRef.current) return;
     if (playing) {
@@ -17,9 +18,27 @@ export default function BGMPlayer() {
     }
   }, [playing]);
 
+  // Try to autoplay the instant the page loads. Most browsers block
+  // unmuted autoplay without a prior user gesture, so as a fallback,
+  // start playback on the very first click/tap/scroll/key anywhere on
+  // the page — effectively "as soon as you enter" in practice.
+  useEffect(() => {
+    setPlaying(true);
+
+    const events: (keyof WindowEventMap)[] = ["click", "touchstart", "keydown", "scroll"];
+    const startOnInteraction = () => setPlaying(true);
+    events.forEach((e) =>
+      window.addEventListener(e, startOnInteraction, { once: true, passive: true })
+    );
+
+    return () => {
+      events.forEach((e) => window.removeEventListener(e, startOnInteraction));
+    };
+  }, []);
+
   return (
     <>
-      <audio ref={audioRef} src="/audio/morning-atlas.mp3" loop preload="none" />
+      <audio ref={audioRef} src="/audio/morning-atlas.mp3" loop preload="auto" />
       <motion.button
         type="button"
         onClick={() => setPlaying((p) => !p)}
