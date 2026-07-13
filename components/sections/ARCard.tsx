@@ -4,6 +4,8 @@ import { ScanLine, Box, Smartphone } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
+const AR_CARD_YOUTUBE_ID = "1WLDHKCBYWM";
+
 const arCardFeatures = [
   {
     icon: ScanLine,
@@ -58,12 +60,13 @@ export default function ARCard() {
 
         {/* Card visual */}
         <AnimateInView delay={0.15}>
-          <div className="relative max-w-3xl mx-auto rounded-3xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--surface)] mb-12">
-            <img
-              src="/images/card-yunon.png"
-              alt="Production YUNON AR 명함 디자인 — 신호수 대표 CEO"
-              className="w-full h-full object-cover"
-              loading="lazy"
+          <div className="relative max-w-sm mx-auto aspect-[9/16] rounded-3xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--surface)] mb-12">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${AR_CARD_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${AR_CARD_YOUTUBE_ID}&rel=0&modestbranding=1&playsinline=1`}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="Production YUNON AR 명함 데모 영상"
             />
           </div>
         </AnimateInView>
