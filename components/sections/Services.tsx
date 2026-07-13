@@ -62,15 +62,16 @@ const services = [
     tags: ["시티 브랜딩", "관광 홍보", "지역 축제"],
     accent: "#10B981",
   },
-  {
-    icon: BarChart3,
-    title: "콘텐츠 전략 컨설팅",
-    description:
-      "영상 제작 전 미디어 전략을 수립하고, 제작 후 성과를 분석해 다음 콘텐츠를 더 효과적으로 만듭니다.",
-    tags: ["미디어 전략", "성과 분석", "콘텐츠 로드맵"],
-    accent: "#06B6D4",
-  },
 ];
+
+const featuredService = {
+  icon: BarChart3,
+  title: "콘텐츠 전략 컨설팅",
+  description:
+    "영상 제작 전 미디어 전략을 수립하고, 제작 후 성과를 분석해 다음 콘텐츠를 더 효과적으로 만듭니다.",
+  tags: ["미디어 전략", "성과 분석", "콘텐츠 로드맵"],
+  accent: "#06B6D4",
+};
 
 export default function Services() {
   return (
@@ -100,6 +101,54 @@ export default function Services() {
             </p>
           </AnimateInView>
         </div>
+
+        {/* Featured wide card */}
+        <AnimateInView delay={0.15}>
+          <motion.article
+            className="glass-card rounded-2xl p-7 flex flex-col sm:flex-row sm:items-center gap-6 cursor-default group mb-5"
+            whileHover={{
+              y: -4,
+              borderColor: `${featuredService.accent}40`,
+            }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"
+              style={{ background: `${featuredService.accent}15` }}
+            >
+              <featuredService.icon
+                size={22}
+                style={{ color: featuredService.accent }}
+                aria-hidden="true"
+              />
+            </div>
+
+            <div className="flex-1 flex flex-col gap-2">
+              <h3 className="text-lg font-semibold text-[var(--text-primary)] leading-tight">
+                {featuredService.title}
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                {featuredService.description}
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 sm:shrink-0">
+              {featuredService.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs px-3 py-1 rounded-full"
+                  style={{
+                    background: `${featuredService.accent}10`,
+                    color: featuredService.accent,
+                    border: `1px solid ${featuredService.accent}25`,
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </motion.article>
+        </AnimateInView>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-3 gap-5">
