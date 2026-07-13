@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import BGMPlayer from "@/components/ui/BGMPlayer";
 
 export const metadata: Metadata = {
   title: "Production YUNON — Media & Cultural Design",
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <BGMPlayer />
       </body>
     </html>
   );
