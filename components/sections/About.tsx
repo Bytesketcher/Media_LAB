@@ -7,6 +7,7 @@ import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const PUBLIC_SECTOR_YOUTUBE_ID = "V0vfWyWXP7Y";
+const CULTURE_ARTS_YOUTUBE_ID = "SSjZHROVTC0";
 
 const visualItems = [
   {
@@ -14,7 +15,11 @@ const visualItems = [
     youtubeId: PUBLIC_SECTOR_YOUTUBE_ID,
     thumbnail: `https://img.youtube.com/vi/${PUBLIC_SECTOR_YOUTUBE_ID}/maxresdefault.jpg`,
   },
-  { label: "문화예술" },
+  {
+    label: "문화예술",
+    youtubeId: CULTURE_ARTS_YOUTUBE_ID,
+    thumbnail: `https://img.youtube.com/vi/${CULTURE_ARTS_YOUTUBE_ID}/maxresdefault.jpg`,
+  },
   { label: "기업 브랜드" },
   { label: "AI 콘텐츠" },
 ];
@@ -35,7 +40,7 @@ const values = [
 ];
 
 export default function About() {
-  const [showPlayer, setShowPlayer] = useState(false);
+  const [activeVideo, setActiveVideo] = useState<{ id: string; label: string } | null>(null);
 
   return (
     <section
@@ -123,13 +128,17 @@ export default function About() {
                 return (
                   <motion.div
                     key={item.label}
-                    onClick={isVideo ? () => setShowPlayer(true) : undefined}
+                    onClick={
+                      isVideo
+                        ? () => setActiveVideo({ id: item.youtubeId!, label: item.label })
+                        : undefined
+                    }
                     onKeyDown={
                       isVideo
                         ? (e) => {
                             if (e.key === "Enter" || e.key === " ") {
                               e.preventDefault();
-                              setShowPlayer(true);
+                              setActiveVideo({ id: item.youtubeId!, label: item.label });
                             }
                           }
                         : undefined
@@ -176,13 +185,13 @@ export default function About() {
       </div>
 
       {/* Video Modal */}
-      {showPlayer && (
+      {activeVideo && (
         <div
           className="fixed inset-0 z-[200] bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
           role="dialog"
           aria-modal="true"
-          aria-label="공공기관 사례 영상"
-          onClick={() => setShowPlayer(false)}
+          aria-label={`${activeVideo.label} 사례 영상`}
+          onClick={() => setActiveVideo(null)}
         >
           <div
             className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden"
@@ -190,13 +199,13 @@ export default function About() {
           >
             <iframe
               className="w-full h-full"
-              src={`https://www.youtube.com/embed/${PUBLIC_SECTOR_YOUTUBE_ID}?autoplay=1&rel=0`}
+              src={`https://www.youtube.com/embed/${activeVideo.id}?autoplay=1&rel=0`}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="공공기관 사례 영상"
+              title={`${activeVideo.label} 사례 영상`}
             />
             <button
-              onClick={() => setShowPlayer(false)}
+              onClick={() => setActiveVideo(null)}
               className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center text-white hover:bg-black/80 transition-colors cursor-pointer"
               aria-label="영상 닫기"
             >
