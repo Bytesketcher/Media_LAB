@@ -1,8 +1,23 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Play } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
+
+const PUBLIC_SECTOR_YOUTUBE_ID = "V0vfWyWXP7Y";
+
+const visualItems = [
+  {
+    label: "공공기관",
+    youtubeId: PUBLIC_SECTOR_YOUTUBE_ID,
+    thumbnail: `https://img.youtube.com/vi/${PUBLIC_SECTOR_YOUTUBE_ID}/maxresdefault.jpg`,
+  },
+  { label: "문화예술" },
+  { label: "기업 브랜드" },
+  { label: "AI 콘텐츠" },
+];
 
 const values = [
   {
@@ -20,6 +35,8 @@ const values = [
 ];
 
 export default function About() {
+  const [showPlayer, setShowPlayer] = useState(false);
+
   return (
     <section
       id="about"
@@ -101,25 +118,93 @@ export default function About() {
 
             {/* Image placeholder grid */}
             <div className="relative rounded-2xl overflow-hidden grid grid-cols-2 gap-3">
-              {["공공기관", "문화예술", "기업 브랜드", "AI 콘텐츠"].map((label, i) => (
-                <motion.div
-                  key={label}
-                  className="glass-card rounded-xl aspect-square flex flex-col items-center justify-center gap-2 cursor-default"
-                  whileHover={{ scale: 1.03, borderColor: "var(--accent)" }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="w-10 h-10 rounded-full bg-[var(--accent-dim)] flex items-center justify-center">
-                    <span className="text-[var(--accent)] text-lg font-bold">{i + 1}</span>
-                  </div>
-                  <span className="text-xs text-[var(--text-secondary)] text-center px-2">
-                    {label}
-                  </span>
-                </motion.div>
-              ))}
+              {visualItems.map((item, i) => {
+                const isVideo = Boolean(item.youtubeId);
+                return (
+                  <motion.div
+                    key={item.label}
+                    onClick={isVideo ? () => setShowPlayer(true) : undefined}
+                    onKeyDown={
+                      isVideo
+                        ? (e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                              e.preventDefault();
+                              setShowPlayer(true);
+                            }
+                          }
+                        : undefined
+                    }
+                    role={isVideo ? "button" : undefined}
+                    tabIndex={isVideo ? 0 : undefined}
+                    aria-label={isVideo ? `${item.label} 사례 영상 재생` : undefined}
+                    className={`relative glass-card rounded-xl aspect-square overflow-hidden flex flex-col items-center justify-center gap-2 ${
+                      isVideo ? "cursor-pointer group" : "cursor-default"
+                    }`}
+                    whileHover={{ scale: 1.03, borderColor: "var(--accent)" }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {isVideo && (
+                      <>
+                        <img
+                          src={item.thumbnail}
+                          alt=""
+                          aria-hidden="true"
+                          className="absolute inset-0 w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-[rgba(7,16,15,0.55)] group-hover:bg-[rgba(7,16,15,0.4)] transition-colors duration-200" />
+                        <Play
+                          size={18}
+                          fill="currentColor"
+                          className="absolute top-2 right-2 text-white/90"
+                          aria-hidden="true"
+                        />
+                      </>
+                    )}
+                    <div className="relative w-10 h-10 rounded-full bg-[var(--accent-dim)] flex items-center justify-center">
+                      <span className="text-[var(--accent)] text-lg font-bold">{i + 1}</span>
+                    </div>
+                    <span className="relative text-xs text-[var(--text-secondary)] text-center px-2">
+                      {item.label}
+                    </span>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </AnimateInView>
       </div>
+
+      {/* Video Modal */}
+      {showPlayer && (
+        <div
+          className="fixed inset-0 z-[200] bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label="공공기관 사례 영상"
+          onClick={() => setShowPlayer(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              className="w-full h-full"
+              src={`https://www.youtube.com/embed/${PUBLIC_SECTOR_YOUTUBE_ID}?autoplay=1&rel=0`}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="공공기관 사례 영상"
+            />
+            <button
+              onClick={() => setShowPlayer(false)}
+              className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center text-white hover:bg-black/80 transition-colors cursor-pointer"
+              aria-label="영상 닫기"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
