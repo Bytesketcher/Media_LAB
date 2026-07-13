@@ -183,7 +183,7 @@ export default function About() {
                     <div className="relative w-10 h-10 rounded-full bg-[var(--accent-dim)] flex items-center justify-center">
                       <span className="text-[var(--accent)] text-lg font-bold">{i + 1}</span>
                     </div>
-                    <span className="relative text-xs text-[var(--text-secondary)] text-center px-2">
+                    <span className="relative text-base font-bold text-white text-center px-2 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
                       {item.label}
                     </span>
                   </motion.div>
