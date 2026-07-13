@@ -7,10 +7,9 @@ const models = [
   { name: "Pastel Prism Tower", file: "/models/pastel-prism-tower.glb" },
   { name: "Gingerbread Campus", file: "/models/gingerbread-campus.glb" },
   { name: "Glass Arch Tower", file: "/models/glass-arch-tower.glb" },
-  { name: "Pastel Circle Park", file: "/models/pastel-circle-park.glb" },
+  { name: "Pastel Cityscape", file: "/models/pastel-cityscape.glb" },
   { name: "Little Detective", file: "/models/little-detective.glb" },
   { name: "Pastel City Building", file: "/models/pastel-city-building.glb" },
-  { name: "Pastel Cityscape", file: "/models/pastel-cityscape.glb" },
 ];
 
 export default function ModelGallery() {
