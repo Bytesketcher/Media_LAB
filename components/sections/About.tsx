@@ -30,7 +30,7 @@ export default function About() {
         {/* Left — Text */}
         <div className="flex flex-col gap-8">
           <AnimateInView>
-            <SectionLabel>About Ground HO</SectionLabel>
+            <SectionLabel>Brand Manifesto</SectionLabel>
           </AnimateInView>
 
           <AnimateInView delay={0.1}>
@@ -38,26 +38,31 @@ export default function About() {
               id="about-heading"
               className="text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-[var(--text-primary)]"
             >
-              영상이 브랜드를
+              우리는 세상을 밝게 비추기보다
               <br />
-              <span className="gradient-text">말하게 합니다</span>
+              <span className="gradient-text">따뜻하게 비춘다</span>
             </h2>
           </AnimateInView>
 
+          <AnimateInView delay={0.15}>
+            <p className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--accent)]">
+              Warm Light. Lasting Stories.
+            </p>
+          </AnimateInView>
+
           <AnimateInView delay={0.2}>
-            <p className="text-[var(--text-secondary)] leading-relaxed text-lg">
-              Ground HO는 공공기관, 지역 브랜드, 문화예술 기관, 기업을 위해
-              정밀하게 설계된 영상 콘텐츠를 제작합니다. 단순한 촬영이 아니라
-              <strong className="text-[var(--text-primary)] font-medium"> 전략적 스토리텔링</strong>을
-              통해 브랜드의 가치를 명확하게 전달합니다.
+            <p className="text-[var(--text-secondary)] leading-relaxed text-lg italic">
+              &ldquo;Great stories do not shine because they are loud. They shine
+              because they are warm. At YUNON, we create media that brings
+              warmth to people, places, and culture.&rdquo;
             </p>
           </AnimateInView>
 
           <AnimateInView delay={0.3}>
             <p className="text-[var(--text-secondary)] leading-relaxed">
-              생성형 AI와 영상 제작의 경계를 허물며, 새로운 미디어 경험을 설계합니다.
-              Ground HO의 모든 프로젝트는 클라이언트와 깊은 협업으로 시작해 측정 가능한
-              성과로 마무리됩니다.
+              좋은 이야기는 화려해서 빛나는 것이 아닙니다. 사람의 마음을 따뜻하게
+              하기 때문에 오래 남습니다. YUNON은 사람과 지역, 그리고 문화에
+              온기를 더하는 콘텐츠를 만듭니다.
             </p>
           </AnimateInView>
 

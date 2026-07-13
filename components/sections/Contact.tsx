@@ -219,7 +219,7 @@ export default function Contact() {
                           value={form.organization}
                           onChange={(e) => handleChange("organization", e.target.value)}
                           className="px-4 py-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border-subtle)] text-[var(--text-primary)] text-sm placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors duration-200"
-                          placeholder="Ground HO Inc."
+                          placeholder="YUNON Inc."
                           autoComplete="organization"
                         />
                       </div>
