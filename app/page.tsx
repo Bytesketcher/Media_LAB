@@ -3,6 +3,7 @@ import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import VRContent from "@/components/sections/VRContent";
 import ARCard from "@/components/sections/ARCard";
+import ModelGallery from "@/components/sections/ModelGallery";
 import FeaturedVideo from "@/components/sections/FeaturedVideo";
 import Works from "@/components/sections/Works";
 import Process from "@/components/sections/Process";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <VRContent />
       <ARCard />
+      <ModelGallery />
       <About />
       <Services />
       <FeaturedVideo />

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -36,6 +37,11 @@ export default function RootLayout({
     <html lang="ko">
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+        <Script
+          type="module"
+          src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body>
         <Navbar />
