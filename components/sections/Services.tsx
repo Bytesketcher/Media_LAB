@@ -8,11 +8,20 @@ import {
   Building2,
   Palette,
   BarChart3,
+  Glasses,
 } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const services = [
+  {
+    icon: Glasses,
+    title: "AR·VR 가상융합 콘텐츠",
+    description:
+      "AR·VR 기술을 활용한 몰입형 홍보 영상과 가상융합 콘텐츠를 기획부터 제작까지 전담합니다. YUNON이 가장 집중하는 핵심 서비스입니다.",
+    tags: ["AR·VR", "가상융합 콘텐츠", "메타버스"],
+    accent: "#00c9a7",
+  },
   {
     icon: Building2,
     title: "기관·기업 홍보영상",
@@ -87,7 +96,7 @@ export default function Services() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              기획, 촬영, 편집, AI 후반 작업까지 — 영상의 모든 단계를 YUNON이 함께합니다.
+              AR·VR 가상융합 콘텐츠 제작을 중심으로, 기획부터 후반 작업까지 영상의 모든 단계를 YUNON이 함께합니다.
             </p>
           </AnimateInView>
         </div>

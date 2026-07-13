@@ -7,11 +7,11 @@ import BGMPlayer from "@/components/ui/BGMPlayer";
 export const metadata: Metadata = {
   title: "Production YUNON — Media & Cultural Design",
   description:
-    "공공기관·지역·문화예술·기업을 위한 홍보영상, 유튜브, 생성형 AI 콘텐츠 전문 미디어 스튜디오",
-  keywords: ["홍보영상", "미디어스튜디오", "AI콘텐츠", "유튜브제작", "영상제작", "기업영상"],
+    "AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로, 공공기관·지역·문화예술·기업을 위한 홍보영상, 유튜브, 생성형 AI 콘텐츠를 제작하는 미디어 스튜디오",
+  keywords: ["AR콘텐츠", "VR콘텐츠", "가상융합콘텐츠", "홍보영상", "미디어스튜디오", "AI콘텐츠", "유튜브제작", "영상제작", "기업영상"],
   openGraph: {
     title: "Production YUNON — Media & Cultural Design",
-    description: "공공기관·지역·문화예술·기업을 위한 홍보영상과 생성형 AI 콘텐츠 제작",
+    description: "AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로 한 미디어 프로덕션",
     type: "website",
     locale: "ko_KR",
     siteName: "Production YUNON",

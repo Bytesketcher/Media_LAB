@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <VRContent />
       <About />
       <Services />
-      <VRContent />
       <FeaturedVideo />
       <Works />
       <Process />

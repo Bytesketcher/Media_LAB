@@ -9,9 +9,9 @@ const VR_YOUTUBE_ID = "ye1dw7m8mhw";
 const vrFeatures = [
   {
     icon: Glasses,
-    title: "VR 헤드셋 호환",
+    title: "AR·VR 기기 호환",
     description:
-      "Meta Quest, Vision Pro 등 주요 VR 기기에서 매끄럽게 재생되는 콘텐츠를 제작합니다.",
+      "Meta Quest, Vision Pro, 스마트폰 AR 등 다양한 기기에서 매끄럽게 재생되는 콘텐츠를 제작합니다.",
   },
   {
     icon: Box,
@@ -38,7 +38,7 @@ export default function VRContent() {
         {/* Header */}
         <div className="text-center mb-16 flex flex-col items-center gap-4">
           <AnimateInView>
-            <SectionLabel>VR Contents</SectionLabel>
+            <SectionLabel>Main Service · AR·VR</SectionLabel>
           </AnimateInView>
           <AnimateInView delay={0.1}>
             <h2
@@ -50,8 +50,9 @@ export default function VRContent() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              평면 화면을 넘어 VR로 공간과 이야기를 직접 체험하게 합니다. 문화유산, 전시, 브랜드 공간을
-              누구나 접근할 수 있는 몰입형 콘텐츠로 재구성합니다.
+              AR·VR 가상융합 콘텐츠는 YUNON이 가장 집중하는 핵심 서비스입니다. 평면 화면을 넘어
+              AR·VR로 공간과 이야기를 직접 체험하게 합니다. 문화유산, 전시, 브랜드 공간을 누구나
+              접근할 수 있는 몰입형 콘텐츠로 재구성합니다.
             </p>
           </AnimateInView>
         </div>

@@ -61,7 +61,7 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--border)] bg-[rgba(0,201,167,0.08)] text-xs tracking-widest uppercase text-[var(--accent)]">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-            Media & Cultural Design
+            AR·VR 가상융합 콘텐츠
           </span>
         </motion.div>
 
@@ -72,9 +72,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="text-[var(--text-primary)]">브랜드의 이야기를</span>
+          <span className="text-[var(--text-primary)]">가상과 현실을 잇는</span>
           <br />
-          <span className="gradient-text">영상으로 말합니다</span>
+          <span className="gradient-text">몰입형 브랜드 경험</span>
         </motion.h1>
 
         {/* Subtext */}
@@ -84,8 +84,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          공공기관·지역·문화예술·기업을 위한 홍보영상,
-          유튜브 콘텐츠, 생성형 AI 미디어를 제작합니다.
+          AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로,
+          홍보영상·유튜브·생성형 AI 콘텐츠까지 폭넓게 제작합니다.
         </motion.p>
 
         {/* CTAs */}
