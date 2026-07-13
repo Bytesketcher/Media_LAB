@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Glasses, Box, Sparkles, Play } from "lucide-react";
+import { Glasses, Box, Sparkles } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
@@ -30,8 +28,6 @@ const vrFeatures = [
 ];
 
 export default function VRContent() {
-  const [playing, setPlaying] = useState(false);
-
   return (
     <section
       id="vr"
@@ -63,40 +59,13 @@ export default function VRContent() {
         {/* Media */}
         <AnimateInView delay={0.15}>
           <div className="relative aspect-video rounded-3xl overflow-hidden border border-[var(--border-subtle)] bg-[var(--surface)] mb-12">
-            {!playing ? (
-              <button
-                type="button"
-                onClick={() => setPlaying(true)}
-                className="absolute inset-0 w-full h-full group cursor-pointer"
-                aria-label="VR 콘텐츠 영상 재생"
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${VR_YOUTUBE_ID}/maxresdefault.jpg`}
-                  alt="VR 콘텐츠 영상 썸네일"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(7,16,15,0.75)] via-transparent to-[rgba(7,16,15,0.25)]" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.span
-                    className="w-20 h-20 rounded-full bg-[var(--accent)] flex items-center justify-center shadow-2xl"
-                    style={{ boxShadow: "0 0 60px rgba(0,201,167,0.5)" }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Play size={28} fill="#07100f" className="ml-1 text-[#07100f]" aria-hidden="true" />
-                  </motion.span>
-                </div>
-              </button>
-            ) : (
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src={`https://www.youtube.com/embed/${VR_YOUTUBE_ID}?autoplay=1&rel=0&modestbranding=1`}
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                title="VR 콘텐츠 영상"
-              />
-            )}
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${VR_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${VR_YOUTUBE_ID}&rel=0&modestbranding=1&playsinline=1`}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="VR 콘텐츠 영상"
+            />
           </div>
         </AnimateInView>
 
