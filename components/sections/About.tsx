@@ -9,6 +9,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const PUBLIC_SECTOR_YOUTUBE_ID = "V0vfWyWXP7Y";
 const CULTURE_ARTS_YOUTUBE_ID = "SSjZHROVTC0";
 const CORPORATE_BRAND_YOUTUBE_ID = "ObY6N23gIa8";
+const AI_CONTENT_YOUTUBE_ID = "6Hx3aFuk_1U";
 
 const visualItems = [
   {
@@ -26,7 +27,11 @@ const visualItems = [
     youtubeId: CORPORATE_BRAND_YOUTUBE_ID,
     thumbnail: `https://img.youtube.com/vi/${CORPORATE_BRAND_YOUTUBE_ID}/maxresdefault.jpg`,
   },
-  { label: "AI 콘텐츠" },
+  {
+    label: "AI 콘텐츠",
+    youtubeId: AI_CONTENT_YOUTUBE_ID,
+    thumbnail: `https://img.youtube.com/vi/${AI_CONTENT_YOUTUBE_ID}/maxresdefault.jpg`,
+  },
 ];
 
 const values = [
