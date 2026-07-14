@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "가상융합", href: "#vr" },
-  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Works", href: "#works" },
+  { label: "About", href: "#about" },
   { label: "Process", href: "#process" },
   { label: "Insights", href: "#insights" },
 ];
