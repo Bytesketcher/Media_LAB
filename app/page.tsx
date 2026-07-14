@@ -15,8 +15,8 @@ export default function Home() {
     <>
       <Hero />
       <VRContent />
-      <ARCard />
       <ModelGallery />
+      <ARCard />
       <Services />
       <FeaturedVideo />
       <Works />
