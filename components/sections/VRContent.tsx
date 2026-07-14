@@ -38,7 +38,7 @@ export default function VRContent() {
         {/* Header */}
         <div className="text-center mb-16 flex flex-col items-center gap-4">
           <AnimateInView>
-            <SectionLabel>Main Service · AR·VR</SectionLabel>
+            <SectionLabel>Main Service · 가상융합(VR·AR)</SectionLabel>
           </AnimateInView>
           <AnimateInView delay={0.1}>
             <h2
@@ -50,8 +50,8 @@ export default function VRContent() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              AR·VR 가상융합 콘텐츠는 YUNON이 가장 집중하는 핵심 서비스입니다. 평면 화면을 넘어
-              AR·VR로 공간과 이야기를 직접 체험하게 합니다. 문화유산, 전시, 브랜드 공간을 누구나
+              가상융합(VR·AR) 콘텐츠는 HO Archive가 가장 집중하는 핵심 서비스입니다. 평면 화면을 넘어
+              VR·AR로 공간과 이야기를 직접 체험하게 합니다. 문화유산, 전시, 공공 공간을 누구나
               접근할 수 있는 몰입형 콘텐츠로 재구성합니다.
             </p>
           </AnimateInView>

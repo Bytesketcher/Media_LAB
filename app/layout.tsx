@@ -6,21 +6,21 @@ import Footer from "@/components/layout/Footer";
 import BGMPlayer from "@/components/ui/BGMPlayer";
 
 export const metadata: Metadata = {
-  title: "Production YUNON — Media & Cultural Design",
+  title: "HO Archive — Immersive Cultural Media",
   description:
-    "AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로, 공공기관·지역·문화예술·기업을 위한 홍보영상, 유튜브, 생성형 AI 콘텐츠를 제작하는 미디어 스튜디오",
-  keywords: ["AR콘텐츠", "VR콘텐츠", "가상융합콘텐츠", "홍보영상", "미디어스튜디오", "AI콘텐츠", "유튜브제작", "영상제작", "기업영상"],
+    "다큐멘터리, 가상융합(VR·AR), AI를 통해 공공의 이야기를 몰입형 문화 경험으로 전환하는 크리에이티브 스튜디오. Archive the Present. Experience the Future.",
+  keywords: ["다큐멘터리", "몰입형미디어", "XR콘텐츠", "VR콘텐츠", "AR콘텐츠", "가상융합콘텐츠", "AI다큐멘터리", "공공콘텐츠", "디지털아카이브", "박물관미디어", "전시영상", "문화유산"],
   openGraph: {
-    title: "Production YUNON — Media & Cultural Design",
-    description: "AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로 한 미디어 프로덕션",
+    title: "HO Archive — Immersive Cultural Media",
+    description: "Archive the Present. Experience the Future. 공공의 이야기를 몰입형 문화 경험으로 만드는 크리에이티브 스튜디오",
     type: "website",
     locale: "ko_KR",
-    siteName: "Production YUNON",
+    siteName: "HO Archive",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Production YUNON",
-    description: "Media & Cultural Design",
+    title: "HO Archive",
+    description: "Immersive Cultural Media",
   },
   robots: { index: true, follow: true },
 };

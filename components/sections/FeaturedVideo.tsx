@@ -29,7 +29,7 @@ export default function FeaturedVideo() {
               id="featured-video-heading"
               className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)]"
             >
-              YUNON의 이야기
+              HO Archive의 이야기
             </h2>
           </AnimateInView>
           <AnimateInView delay={0.2}>
@@ -59,7 +59,7 @@ export default function FeaturedVideo() {
                 {/* YouTube thumbnail */}
                 <img
                   src={`https://img.youtube.com/vi/${BRAND_STORY_YOUTUBE_ID}/maxresdefault.jpg`}
-                  alt="YUNON 브랜드 스토리 영상 썸네일"
+                  alt="HO Archive 브랜드 스토리 영상 썸네일"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -82,10 +82,10 @@ export default function FeaturedVideo() {
 
                   <div className="text-center">
                     <p className="text-[var(--text-primary)] font-semibold text-xl mb-1">
-                      YUNON Story
+                      HO Archive Story
                     </p>
                     <p className="text-[var(--text-secondary)] text-sm">
-                      3분으로 보는 YUNON의 철학과 여정
+                      3분으로 보는 HO Archive의 철학과 여정
                     </p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function FeaturedVideo() {
                   src={`https://www.youtube.com/embed/${BRAND_STORY_YOUTUBE_ID}?autoplay=1&rel=0&modestbranding=1`}
                   allow="autoplay; encrypted-media"
                   allowFullScreen
-                  title="YUNON 브랜드 스토리"
+                  title="HO Archive 브랜드 스토리"
                 />
               </div>
             )}
@@ -109,12 +109,12 @@ export default function FeaturedVideo() {
         <AnimateInView delay={0.2}>
           <blockquote className="mt-12 text-center max-w-2xl mx-auto">
             <p className="text-2xl md:text-3xl font-medium text-[var(--text-primary)] leading-relaxed italic">
-              "영상은 단순한 콘텐츠가 아닙니다.
+              "기록은 단순한 콘텐츠가 아닙니다.
               <br />
-              <span className="gradient-text">브랜드와 사람 사이의 연결입니다."</span>
+              <span className="gradient-text">사람과 문화 사이의 연결입니다."</span>
             </p>
             <footer className="mt-4 text-sm text-[var(--text-muted)]">
-              — YUNON
+              — HO Archive
             </footer>
           </blockquote>
         </AnimateInView>

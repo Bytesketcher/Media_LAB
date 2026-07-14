@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "이용약관 — Production YUNON",
+  title: "이용약관 — HO Archive",
 };
 
 export default function TermsOfServicePage() {
@@ -18,7 +18,7 @@ export default function TermsOfServicePage() {
             제1조 (목적)
           </h2>
           <p>
-            본 약관은 Production YUNON(이하 &ldquo;회사&rdquo;)이 제공하는 웹사이트 및 관련 서비스
+            본 약관은 HO Archive(이하 &ldquo;회사&rdquo;)가 제공하는 웹사이트 및 관련 서비스
             (이하 &ldquo;서비스&rdquo;)의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항,
             기타 필요한 사항을 규정함을 목적으로 합니다.
           </p>
@@ -30,8 +30,8 @@ export default function TermsOfServicePage() {
           </h2>
           <p>
             &ldquo;이용자&rdquo;란 본 약관에 따라 회사가 제공하는 서비스를 이용하는 모든 개인 또는
-            법인을 말하며, &ldquo;서비스&rdquo;란 회사가 웹사이트를 통해 제공하는 홍보영상, 유튜브
-            콘텐츠, 생성형 AI 콘텐츠 제작 관련 정보 제공 및 프로젝트 문의 접수 등 일체의 서비스를
+            법인을 말하며, &ldquo;서비스&rdquo;란 회사가 웹사이트를 통해 제공하는 다큐멘터리, 가상융합
+            (VR·AR), 생성형 AI 콘텐츠 제작 관련 정보 제공 및 프로젝트 문의 접수 등 일체의 서비스를
             의미합니다.
           </p>
         </section>

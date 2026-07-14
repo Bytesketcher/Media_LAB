@@ -2,10 +2,10 @@ import { Instagram, Youtube, Mail } from "lucide-react";
 
 const footerLinks: Record<string, { label: string; href: string }[]> = {
   Services: [
-    { label: "홍보영상 제작", href: "#" },
-    { label: "유튜브 콘텐츠", href: "#" },
-    { label: "AI 콘텐츠", href: "#" },
-    { label: "기업 브랜드 필름", href: "#" },
+    { label: "다큐멘터리 제작", href: "#" },
+    { label: "가상융합(VR·AR)", href: "#" },
+    { label: "뮤지엄·전시 미디어", href: "#" },
+    { label: "디지털 아카이빙", href: "#" },
   ],
   Company: [
     { label: "About", href: "#" },
@@ -31,13 +31,13 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
-                <span className="text-[#07100f] font-bold text-sm">Y</span>
+                <span className="text-[#07100f] font-bold text-xs">HO</span>
               </div>
-              <span className="text-[var(--text-primary)] font-semibold text-lg">Production YUNON</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Archive</span>
             </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-xs">
-              공공기관·지역·문화예술·기업을 위한 Media & Cultural Design 스튜디오.
-              영상으로 브랜드의 이야기를 전합니다.
+              공공기관·문화재단·박물관·지역을 위한 몰입형 문화 미디어 스튜디오.
+              다큐멘터리와 가상융합(VR·AR), AI로 기록을 경험으로 확장합니다.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
@@ -88,7 +88,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--border-subtle)] gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © 2026 YUNON. All rights reserved.
+            © 2026 HO Archive. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Crafted with precision in Korea

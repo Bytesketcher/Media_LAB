@@ -88,14 +88,14 @@ export default function Contact() {
                 id="contact-heading"
                 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)]"
               >
-                프로젝트를
+                Let&apos;s Create the
                 <br />
-                <span className="gradient-text">시작해봐요</span>
+                <span className="gradient-text">Next Cultural Experience.</span>
               </h2>
             </AnimateInView>
             <AnimateInView delay={0.2}>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                규모에 상관없이 모든 문의를 환영합니다.
+                공공기관·문화재단·박물관 등 규모에 상관없이 모든 문의를 환영합니다.
                 아이디어가 있다면 먼저 연락해 주세요.
                 빠른 시일 내에 답변드리겠습니다.
               </p>
@@ -126,6 +126,25 @@ export default function Contact() {
               );
             })}
           </div>
+
+          {/* Clients */}
+          <AnimateInView delay={0.4}>
+            <div className="flex flex-col gap-3">
+              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-[var(--text-muted)]">
+                Clients
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {["Government", "Museum", "Foundation", "University", "City", "Brand"].map((client) => (
+                  <span
+                    key={client}
+                    className="text-xs px-3 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-secondary)]"
+                  >
+                    {client}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </AnimateInView>
 
           {/* Response time */}
           <AnimateInView delay={0.5}>
@@ -219,7 +238,7 @@ export default function Contact() {
                           value={form.organization}
                           onChange={(e) => handleChange("organization", e.target.value)}
                           className="px-4 py-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border-subtle)] text-[var(--text-primary)] text-sm placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors duration-200"
-                          placeholder="YUNON Inc."
+                          placeholder="OO문화재단 / OO박물관"
                           autoComplete="organization"
                         />
                       </div>

@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "AR·VR", href: "#vr" },
+  { label: "가상융합", href: "#vr" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Works", href: "#works" },
@@ -64,14 +64,14 @@ export default function Navbar() {
           <a
             href="#"
             className="flex items-center gap-3 group"
-            aria-label="Production YUNON 홈"
+            aria-label="HO Archive 홈"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           >
             <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
-              <span className="text-[#07100f] font-bold text-sm">Y</span>
+              <span className="text-[#07100f] font-bold text-xs">HO</span>
             </div>
             <span className="text-[var(--text-primary)] font-semibold text-lg tracking-tight">
-              Production YUNON
+              HO Archive
             </span>
           </a>
 
@@ -125,7 +125,7 @@ export default function Navbar() {
             aria-label="모바일 메뉴"
           >
             <div className="flex justify-between items-center px-6 h-[72px]">
-              <span className="text-[var(--text-primary)] font-semibold text-lg">Production YUNON</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Archive</span>
               <button
                 onClick={() => setMenuOpen(false)}
                 className="text-[var(--text-primary)] cursor-pointer p-2"

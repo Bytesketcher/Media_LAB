@@ -3,74 +3,83 @@
 import { motion } from "framer-motion";
 import {
   Video,
-  Youtube,
   Sparkles,
   Building2,
   Palette,
-  BarChart3,
   Glasses,
+  Landmark,
+  Layers,
+  Archive,
 } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const services = [
   {
+    icon: Video,
+    title: "Documentary",
+    description:
+      "지역과 사람, 공동체의 이야기를 기록하는 다큐멘터리를 기획부터 촬영, 편집까지 제작합니다.",
+    tags: ["다큐멘터리", "지역 기록", "공동체 스토리"],
+    accent: "#4B6756",
+  },
+  {
     icon: Glasses,
-    title: "AR·VR 가상융합 콘텐츠",
+    title: "가상융합(VR·AR)",
     description:
-      "AR·VR 기술을 활용한 몰입형 홍보 영상과 가상융합 콘텐츠를 기획부터 제작까지 전담합니다. YUNON이 가장 집중하는 핵심 서비스입니다.",
-    tags: ["AR·VR", "가상융합 콘텐츠", "메타버스"],
-    accent: "#00c9a7",
-  },
-  {
-    icon: Building2,
-    title: "기관·기업 홍보영상",
-    description:
-      "공공기관, 지자체, 기업의 비전과 가치를 전달하는 전략적 홍보 영상을 기획부터 후반 작업까지 원스톱으로 제작합니다.",
-    tags: ["홍보영상", "기업 브랜드필름", "다큐멘터리"],
-    accent: "#00c9a7",
-  },
-  {
-    icon: Youtube,
-    title: "유튜브 채널 운영",
-    description:
-      "채널 전략 수립부터 정기 콘텐츠 제작, 썸네일 디자인, 알고리즘 최적화까지 유튜브 채널을 성장시킵니다.",
-    tags: ["채널 기획", "숏폼", "롱폼 콘텐츠"],
-    accent: "#FF4444",
-  },
-  {
-    icon: Sparkles,
-    title: "생성형 AI 콘텐츠",
-    description:
-      "AI 영상 생성, AI 내레이션, 가상 스튜디오 등 최신 생성형 AI 기술을 활용한 혁신적인 콘텐츠를 만듭니다.",
-    tags: ["AI 영상", "AI 내레이션", "버추얼 프로덕션"],
-    accent: "#7C3AED",
+      "VR·AR 기술로 공간과 이야기를 몰입형으로 체험할 수 있는 가상융합 콘텐츠를 만듭니다.",
+    tags: ["VR", "AR", "몰입형 경험"],
+    accent: "#2E6FBB",
   },
   {
     icon: Palette,
-    title: "문화예술 미디어",
+    title: "Cultural Branding",
     description:
-      "전시, 공연, 축제 등 문화예술 현장을 감각적인 영상으로 기록하고 아카이빙합니다. 예술의 순간을 영원히.",
-    tags: ["전시 기록", "공연 영상", "아카이브"],
-    accent: "#F59E0B",
+      "문화재단, 박물관, 미술관의 브랜드 아이덴티티와 이야기를 시각적으로 설계합니다.",
+    tags: ["문화 브랜딩", "아이덴티티", "브랜드 필름"],
+    accent: "#C8A14D",
   },
   {
-    icon: Video,
-    title: "지역 콘텐츠",
+    icon: Landmark,
+    title: "Museum Media",
     description:
-      "지역의 문화, 관광, 특산물을 알리는 시티 브랜딩 영상과 관광 홍보 콘텐츠를 제작합니다.",
-    tags: ["시티 브랜딩", "관광 홍보", "지역 축제"],
-    accent: "#10B981",
+      "박물관·미술관·문화유산 공간을 위한 전시 영상과 미디어아트 콘텐츠를 제작합니다.",
+    tags: ["전시영상", "미디어아트", "문화유산"],
+    accent: "#C8A14D",
+  },
+  {
+    icon: Building2,
+    title: "Public Content",
+    description:
+      "공공기관과 지자체의 정책과 지역 이야기를 신뢰감 있게 전달하는 콘텐츠를 제작합니다.",
+    tags: ["공공기관", "지자체", "정책 홍보"],
+    accent: "#4B6756",
+  },
+  {
+    icon: Layers,
+    title: "Interactive Exhibition",
+    description:
+      "전시장과 공연 공간을 위한 인터랙티브 콘텐츠와 공간 기반 스토리텔링을 기획합니다.",
+    tags: ["인터랙티브", "공간 스토리텔링", "전시 디자인"],
+    accent: "#2E6FBB",
+  },
+  {
+    icon: Sparkles,
+    title: "AI Storytelling",
+    description:
+      "생성형 AI와 디지털 휴먼을 활용해 공공의 이야기를 새로운 방식의 AI 다큐멘터리로 제작합니다.",
+    tags: ["생성형 AI", "디지털 휴먼", "AI 다큐멘터리"],
+    accent: "#7C3AED",
   },
 ];
 
 const featuredService = {
-  icon: BarChart3,
-  title: "콘텐츠 전략 컨설팅",
+  icon: Archive,
+  title: "Digital Archive",
   description:
-    "영상 제작 전 미디어 전략을 수립하고, 제작 후 성과를 분석해 다음 콘텐츠를 더 효과적으로 만듭니다.",
-  tags: ["미디어 전략", "성과 분석", "콘텐츠 로드맵"],
-  accent: "#06B6D4",
+    "영상과 자료를 디지털로 아카이빙하고, 체계적인 메타데이터 관리로 문화유산을 오래도록 보존합니다.",
+  tags: ["디지털 아카이빙", "문화유산 보존", "메타데이터 관리"],
+  accent: "#C8A14D",
 };
 
 export default function Services() {
@@ -97,7 +106,8 @@ export default function Services() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              AR·VR 가상융합 콘텐츠 제작을 중심으로, 기획부터 후반 작업까지 영상의 모든 단계를 YUNON이 함께합니다.
+              다큐멘터리부터 가상융합(VR·AR), AI 콘텐츠까지, 공공의 이야기를 문화 경험으로 만드는
+              모든 과정을 HO Archive가 함께합니다.
             </p>
           </AnimateInView>
         </div>

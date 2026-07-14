@@ -43,7 +43,7 @@ export default function Hero() {
             src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_YOUTUBE_ID}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1`}
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
-            title="YUNON 히어로 영상"
+            title="HO Archive 히어로 영상"
             style={{ objectFit: "cover" }}
           />
         )}
@@ -61,9 +61,19 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--border)] bg-[rgba(0,201,167,0.08)] text-xs tracking-widest uppercase text-[var(--accent)]">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-            AR·VR 가상융합 콘텐츠
+            Immersive Cultural Media
           </span>
         </motion.div>
+
+        {/* Tagline */}
+        <motion.p
+          className="text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-[var(--text-muted)]"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
+        >
+          Archive the Present. Experience the Future.
+        </motion.p>
 
         {/* Headline */}
         <motion.h1
@@ -72,9 +82,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="text-[var(--text-primary)]">가상과 현실을 잇는</span>
+          <span className="text-[var(--text-primary)]">영상을 넘어 공간으로</span>
           <br />
-          <span className="gradient-text">몰입형 브랜드 경험</span>
+          <span className="gradient-text">기록을 넘어 경험으로</span>
         </motion.h1>
 
         {/* Subtext */}
@@ -84,8 +94,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          AR·VR 가상융합 콘텐츠 홍보 영상 제작을 중심으로,
-          홍보영상·유튜브·생성형 AI 콘텐츠까지 폭넓게 제작합니다.
+          HO Archive는 공공의 이야기를 몰입형 문화 콘텐츠로 디자인합니다.
+          다큐멘터리, 가상융합(VR·AR), AI를 통해 기록을 경험으로 확장합니다.
         </motion.p>
 
         {/* CTAs */}
@@ -176,7 +186,7 @@ export default function Hero() {
               src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&rel=0`}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="YUNON 쇼릴"
+              title="HO Archive 쇼릴"
             />
             <button
               onClick={() => setShowPlayer(false)}

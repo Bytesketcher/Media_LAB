@@ -36,16 +36,24 @@ const visualItems = [
 
 const values = [
   {
-    title: "Story-First",
-    description: "모든 영상은 이야기에서 시작합니다. 브랜드의 본질을 깊이 이해하고 서사를 설계합니다.",
+    title: "Archive",
+    description: "기록은 과거를 보존하는 것이 아니라 미래를 만드는 시작입니다.",
   },
   {
-    title: "AI-Augmented",
-    description: "생성형 AI를 창의적 도구로 활용해 더 빠르고, 더 정밀한 콘텐츠를 만들어냅니다.",
+    title: "Humanity",
+    description: "모든 기술은 사람을 향해야 합니다.",
   },
   {
-    title: "Impact-Driven",
-    description: "조회수와 인게이지먼트, 실제 성과로 측정되는 콘텐츠를 지향합니다.",
+    title: "Culture",
+    description: "문화는 경험될 때 살아납니다.",
+  },
+  {
+    title: "Immersion",
+    description: "몰입은 감동을 오래 기억하게 합니다.",
+  },
+  {
+    title: "Innovation",
+    description: "새로운 기술은 새로운 이야기를 위한 도구입니다.",
   },
 ];
 
@@ -70,31 +78,34 @@ export default function About() {
               id="about-heading"
               className="text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-[var(--text-primary)]"
             >
-              우리는 세상을 밝게 비추기보다
+              Archive the Present.
               <br />
-              <span className="gradient-text">따뜻하게 비춘다</span>
+              <span className="gradient-text">Experience the Future.</span>
             </h2>
           </AnimateInView>
 
           <AnimateInView delay={0.15}>
             <p className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--accent)]">
-              Warm Light. Lasting Stories.
+              Public Stories Become Immersive Cultural Experiences.
             </p>
           </AnimateInView>
 
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] leading-relaxed text-lg italic">
-              &ldquo;Great stories do not shine because they are loud. They shine
-              because they are warm. At YUNON, we create media that brings
-              warmth to people, places, and culture.&rdquo;
+              &ldquo;We believe every community has stories worth preserving.
+              We believe technology should deepen culture, not distract from
+              it. Because culture is not only something we remember. It is
+              something we experience.&rdquo;
             </p>
           </AnimateInView>
 
           <AnimateInView delay={0.3}>
             <p className="text-[var(--text-secondary)] leading-relaxed">
-              좋은 이야기는 화려해서 빛나는 것이 아닙니다. 사람의 마음을 따뜻하게
-              하기 때문에 오래 남습니다. YUNON은 사람과 지역, 그리고 문화에
-              온기를 더하는 콘텐츠를 만듭니다.
+              오늘의 이야기를 기록하고, 내일의 문화 경험을 디자인합니다. HO Archive는
+              사람과 지역, 그리고 공동체의 이야기를 몰입형 미디어로 재해석하는
+              크리에이티브 스튜디오입니다. 우리는 단순히 영상을 제작하지 않습니다.
+              기록된 이야기를 공간과 경험으로 확장하여, 공공 콘텐츠를 살아있는
+              문화 자산으로 만듭니다.
             </p>
           </AnimateInView>
 

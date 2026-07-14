@@ -66,7 +66,7 @@ export default function ARCard() {
               src={`https://www.youtube.com/embed/${AR_CARD_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${AR_CARD_YOUTUBE_ID}&rel=0&modestbranding=1&playsinline=1`}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="Production YUNON AR 명함 데모 영상"
+              title="HO Archive AR 명함 데모 영상"
             />
           </div>
         </AnimateInView>
