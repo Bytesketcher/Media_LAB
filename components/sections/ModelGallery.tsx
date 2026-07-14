@@ -4,12 +4,12 @@ import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const models = [
-  { name: "Pastel Prism Tower", file: "/models/pastel-prism-tower.glb" },
-  { name: "Gingerbread Campus", file: "/models/gingerbread-campus.glb" },
-  { name: "Glass Arch Tower", file: "/models/glass-arch-tower.glb" },
-  { name: "Pastel Cityscape", file: "/models/pastel-cityscape.glb" },
-  { name: "Little Detective", file: "/models/little-detective.glb" },
-  { name: "Pastel City Building", file: "/models/pastel-city-building.glb" },
+  { name: "G Tower", file: "/models/pastel-prism-tower.glb" },
+  { name: "Songdo International Library", file: "/models/gingerbread-campus.glb" },
+  { name: "Arts Center Incheon", file: "/models/glass-arch-tower.glb" },
+  { name: "Songdo ConvensiA", file: "/models/pastel-cityscape.glb" },
+  { name: "Himchan", file: "/models/little-detective.glb" },
+  { name: "Songdo 4-dong Administrative Welfare Center", file: "/models/pastel-city-building.glb" },
 ];
 
 export default function ModelGallery() {
