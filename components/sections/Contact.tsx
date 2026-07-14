@@ -88,9 +88,9 @@ export default function Contact() {
                 id="contact-heading"
                 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)]"
               >
-                Let&apos;s Create the
+                Let&apos;s Build the
                 <br />
-                <span className="gradient-text">Next Cultural Experience.</span>
+                <span className="gradient-text">Next Public Experience.</span>
               </h2>
             </AnimateInView>
             <AnimateInView delay={0.2}>
@@ -130,11 +130,16 @@ export default function Contact() {
           {/* Clients */}
           <AnimateInView delay={0.4}>
             <div className="flex flex-col gap-3">
-              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-[var(--text-muted)]">
-                Clients
-              </span>
+              <div className="flex flex-col gap-1">
+                <span className="text-xs font-semibold tracking-[0.15em] uppercase text-[var(--text-muted)]">
+                  Target Clients
+                </span>
+                <span className="text-xs text-[var(--text-secondary)]">
+                  신뢰받는 공공 콘텐츠 파트너
+                </span>
+              </div>
               <div className="flex flex-wrap gap-2">
-                {["Government", "Museum", "Foundation", "University", "City", "Brand"].map((client) => (
+                {["지방자치단체", "공공기관", "문화재단", "박물관·미술관", "관광기관", "대학교", "기업 ESG·브랜드팀", "지역문화 프로젝트"].map((client) => (
                   <span
                     key={client}
                     className="text-xs px-3 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-secondary)]"

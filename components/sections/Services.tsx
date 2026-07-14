@@ -10,6 +10,7 @@ import {
   Landmark,
   Layers,
   Archive,
+  Youtube,
 } from "lucide-react";
 import AnimateInView from "@/components/ui/AnimateInView";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -70,6 +71,14 @@ const services = [
       "생성형 AI와 디지털 휴먼을 활용해 공공의 이야기를 새로운 방식의 AI 다큐멘터리로 제작합니다.",
     tags: ["생성형 AI", "디지털 휴먼", "AI 다큐멘터리"],
     accent: "#7C3AED",
+  },
+  {
+    icon: Youtube,
+    title: "YouTube Production",
+    description:
+      "채널 전략 수립부터 영상 제작, 숏폼 콘텐츠, 운영 컨설팅까지 유튜브 채널 성장을 지원합니다.",
+    tags: ["채널 기획", "숏폼 콘텐츠", "운영 컨설팅"],
+    accent: "#FF4444",
   },
 ];
 

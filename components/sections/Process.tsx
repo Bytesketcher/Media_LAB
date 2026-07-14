@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { MessageSquare, Lightbulb, Camera, Sparkles, Rocket } from "lucide-react";
@@ -80,7 +80,8 @@ export default function Process() {
         </AnimateInView>
         <AnimateInView delay={0.2}>
           <p className="text-[var(--text-secondary)] max-w-lg text-center">
-            투명하고 체계적인 5단계 프로세스로 모든 프로젝트를 진행합니다.
+            콘텐츠는 만드는 것이 아니라 설계하는 것입니다. 기획부터 제작, 기술 구현, 운영까지
+            하나의 프로세스로 제공합니다.
           </p>
         </AnimateInView>
       </div>

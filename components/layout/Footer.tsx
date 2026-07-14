@@ -35,9 +35,12 @@ export default function Footer() {
               </div>
               <span className="text-[var(--text-primary)] font-semibold text-lg">HO Archive</span>
             </div>
+            <p className="text-xs font-medium tracking-[0.15em] uppercase text-[var(--accent)] mb-3">
+              Creating Public Experiences.
+            </p>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-xs">
-              공공기관·문화재단·박물관·지역을 위한 몰입형 문화 미디어 스튜디오.
-              다큐멘터리와 가상융합(VR·AR), AI로 기록을 경험으로 확장합니다.
+              공공기관·문화재단·박물관·지역을 위한 몰입형 콘텐츠 프로덕션.
+              다큐멘터리, XR, AI, 인터랙티브 기술로 사람과 장소, 문화를 잇는 이야기를 만듭니다.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a

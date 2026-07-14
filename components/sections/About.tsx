@@ -36,24 +36,20 @@ const visualItems = [
 
 const values = [
   {
-    title: "Archive",
-    description: "기록은 과거를 보존하는 것이 아니라 미래를 만드는 시작입니다.",
+    title: "Story First",
+    description: "기술보다 이야기를 우선합니다.",
   },
   {
-    title: "Humanity",
-    description: "모든 기술은 사람을 향해야 합니다.",
+    title: "Human Centered",
+    description: "사람 중심의 콘텐츠를 만듭니다.",
   },
   {
-    title: "Culture",
-    description: "문화는 경험될 때 살아납니다.",
+    title: "Culture Driven",
+    description: "문화가 지속되는 콘텐츠를 만듭니다.",
   },
   {
-    title: "Immersion",
-    description: "몰입은 감동을 오래 기억하게 합니다.",
-  },
-  {
-    title: "Innovation",
-    description: "새로운 기술은 새로운 이야기를 위한 도구입니다.",
+    title: "Technology with Purpose",
+    description: "기술은 목적이 아니라 더 깊은 경험을 위한 도구입니다.",
   },
 ];
 
@@ -86,7 +82,7 @@ export default function About() {
 
           <AnimateInView delay={0.15}>
             <p className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--accent)]">
-              Public Stories Become Immersive Cultural Experiences.
+              Stories That Move People.
             </p>
           </AnimateInView>
 
@@ -101,11 +97,10 @@ export default function About() {
 
           <AnimateInView delay={0.3}>
             <p className="text-[var(--text-secondary)] leading-relaxed">
-              오늘의 이야기를 기록하고, 내일의 문화 경험을 디자인합니다. HO Archive는
-              사람과 지역, 그리고 공동체의 이야기를 몰입형 미디어로 재해석하는
-              크리에이티브 스튜디오입니다. 우리는 단순히 영상을 제작하지 않습니다.
-              기록된 이야기를 공간과 경험으로 확장하여, 공공 콘텐츠를 살아있는
-              문화 자산으로 만듭니다.
+              우리는 공공의 가치가 오래 살아남는 콘텐츠를 제작하는 회사입니다. 좋은 영상
+              콘텐츠는 지역의 브랜드가 되고, 도시의 자산이 되고, 문화가 됩니다. HO Archive는
+              영상, XR, AI, 인터랙티브 기술을 활용하여 공공과 문화 콘텐츠를 기획하고
+              제작하는 크리에이티브 프로덕션입니다.
             </p>
           </AnimateInView>
 

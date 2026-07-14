@@ -61,7 +61,7 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--border)] bg-[rgba(0,201,167,0.08)] text-xs tracking-widest uppercase text-[var(--accent)]">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-            Immersive Cultural Media
+            Immersive Content Production
           </span>
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
         >
-          Archive the Present. Experience the Future.
+          Documentary · XR · AI · Interactive Media
         </motion.p>
 
         {/* Headline */}
@@ -94,8 +94,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          HO Archive는 공공의 이야기를 몰입형 문화 콘텐츠로 디자인합니다.
-          다큐멘터리, 가상융합(VR·AR), AI를 통해 기록을 경험으로 확장합니다.
+          HO Archive는 공공과 문화를 위한 콘텐츠를 기획하고 제작합니다.
+          다큐멘터리, XR, AI, 인터랙티브 기술로 사람과 장소, 문화를 잇는 이야기를 만듭니다.
         </motion.p>
 
         {/* CTAs */}
