@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "개인정보처리방침 — HO Archive",
+  title: "개인정보처리방침 — HO Media Archive",
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       <div className="flex flex-col gap-10 text-[var(--text-secondary)] leading-relaxed text-sm">
         <section>
           <p>
-            HO Archive(이하 &ldquo;회사&rdquo;)는 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등
+            HO Media Archive(이하 &ldquo;회사&rdquo;)는 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등
             관련 법령을 준수하고 있습니다. 회사는 본 개인정보처리방침을 통해 이용자가 제공하는 개인정보가
             어떠한 목적과 방식으로 이용되고 있으며, 개인정보 보호를 위해 어떠한 조치가 취해지고 있는지
             안내드립니다.
@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
             처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
           </p>
           <ul className="list-disc list-inside flex flex-col gap-1 mt-2">
-            <li>담당 부서: HO Archive 운영팀</li>
+            <li>담당 부서: HO Media Archive 운영팀</li>
             <li>연락처: snowypaper70@gmail.com</li>
           </ul>
         </section>

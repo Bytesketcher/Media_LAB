@@ -33,7 +33,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
                 <span className="text-[#07100f] font-bold text-xs">HO</span>
               </div>
-              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Archive</span>
+              <span className="text-[var(--text-primary)] font-semibold text-lg">HO Media Archive</span>
             </div>
             <p className="text-xs font-medium tracking-[0.15em] uppercase text-[var(--accent)] mb-3">
               Creating Public Experiences.
@@ -91,7 +91,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[var(--border-subtle)] gap-4">
           <p className="text-xs text-[var(--text-muted)]">
-            © 2026 HO Archive. All rights reserved.
+            © 2026 HO Media Archive. All rights reserved.
           </p>
           <p className="text-xs text-[var(--text-muted)]">
             Crafted with precision in Korea

@@ -98,7 +98,7 @@ export default function About() {
           <AnimateInView delay={0.3}>
             <p className="text-[var(--text-secondary)] leading-relaxed">
               우리는 공공의 가치가 오래 살아남는 콘텐츠를 제작하는 회사입니다. 좋은 영상
-              콘텐츠는 지역의 브랜드가 되고, 도시의 자산이 되고, 문화가 됩니다. HO Archive는
+              콘텐츠는 지역의 브랜드가 되고, 도시의 자산이 되고, 문화가 됩니다. HO Media Archive는
               영상, XR, AI, 인터랙티브 기술을 활용하여 공공과 문화 콘텐츠를 기획하고
               제작하는 크리에이티브 프로덕션입니다.
             </p>

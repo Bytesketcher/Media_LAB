@@ -50,7 +50,7 @@ export default function VRContent() {
           </AnimateInView>
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
-              가상융합(VR·AR) 콘텐츠는 HO Archive의 핵심 서비스 중 하나입니다. 평면 화면을 넘어
+              가상융합(VR·AR) 콘텐츠는 HO Media Archive의 핵심 서비스 중 하나입니다. 평면 화면을 넘어
               VR·AR로 공간과 이야기를 직접 체험하게 합니다. 문화유산, 전시, 공공 공간을 누구나
               접근할 수 있는 몰입형 콘텐츠로 재구성합니다.
             </p>

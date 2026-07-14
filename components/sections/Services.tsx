@@ -116,7 +116,7 @@ export default function Services() {
           <AnimateInView delay={0.2}>
             <p className="text-[var(--text-secondary)] max-w-lg text-center leading-relaxed">
               다큐멘터리부터 가상융합(VR·AR), AI 콘텐츠까지, 공공의 이야기를 문화 경험으로 만드는
-              모든 과정을 HO Archive가 함께합니다.
+              모든 과정을 HO Media Archive가 함께합니다.
             </p>
           </AnimateInView>
         </div>

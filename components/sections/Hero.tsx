@@ -43,7 +43,7 @@ export default function Hero() {
             src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_YOUTUBE_ID}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1`}
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
-            title="HO Archive 히어로 영상"
+            title="HO Media Archive 히어로 영상"
             style={{ objectFit: "cover" }}
           />
         )}
@@ -94,7 +94,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
-          HO Archive는 공공과 문화를 위한 콘텐츠를 기획하고 제작합니다.
+          HO Media Archive는 공공과 문화를 위한 콘텐츠를 기획하고 제작합니다.
           다큐멘터리, XR, AI, 인터랙티브 기술로 사람과 장소, 문화를 잇는 이야기를 만듭니다.
         </motion.p>
 
@@ -186,7 +186,7 @@ export default function Hero() {
               src={`https://www.youtube.com/embed/${HERO_YOUTUBE_ID}?autoplay=1&rel=0`}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="HO Archive 쇼릴"
+              title="HO Media Archive 쇼릴"
             />
             <button
               onClick={() => setShowPlayer(false)}
